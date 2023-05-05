@@ -16,13 +16,9 @@
 header{
     position: relative;
     font-family: roc-grotesk, sans-serif;
-    font-size: 80px;
-    color: rgb(112,112,112);
-    
+    font-size: 80px; 
     padding: 10px;
     z-index: 2;
-    
-    
 } 
 
 #overlay{
@@ -110,12 +106,16 @@ a:hover{
    -moz-column-gap:5px;
    column-count:3;
    column-gap:5px;
+   display: block;
+   position: absolute;
+   padding: 5px;
 }
 #gallery img {
     width: 100% !important;
     height: auto !important;
     margin-bottom:5px; /* to match column gap */
  }
+ 
 
 /* @media (min-width: 960px){
 
@@ -135,31 +135,140 @@ a:active -a link the moment it is clicked */
         width: 800px;
     }
 }
-
-
-.column{
-    display:flex;
-    padding: 10px;
-    width: 75vw;
-    gap: 25px;
-
-}
-.right{
-    width: 25vw;
+/* for mobile devices */
+/* check out this hamburgermenu
+https://codepen.io/alvarotrigo/pen/oNGzoYd  */
+@media screen and (max-width: 600px){
+    iframe{
+        width: 88vw;
+        height: 50vw;
+    }
+    object{
+        width: 88vw;
+        
+    }
+    header #myLinks{
+        color: rgb(139, 50, 168);
+        display: none;
+        font-size: 20px;
+        padding: 5px;
+        background-color: #f3fff293;
+        width: 30vw;
+        float: right;
+        text-align: right;
+    }
+    header #myLinks a{
+        line-height: 150%;
+        text-align: right;
+    }
+    p{
+        position: relative;
+        font-family: forma-djr-display, sans-serif;
+        font-weight: 420;
+        letter-spacing: 1px;
+        font-size: 15px;
+        color: rgb(139, 50, 168);
+        padding: 15px;
+        
+        width: 75vw;
+        
+    }
+    header{
+        position: relative;
+        font-family: roc-grotesk, sans-serif;
+        font-size: 40px; 
+        padding: 10px;
+        z-index: 2;
+    } 
+    h1{
+        position: relative;
+        font-family: roc-grotesk, sans-serif;
+        font-size: 15px;
+        color: rgb(139, 50, 168);
+        
+        padding: 2px;
+        font-weight: normal;
+        z-index: 0;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: 0px 1fr;
+        gap:10px;
     
+    }
+    
+    .leftmenu{
+        grid-column: 1;
+        display: none;
 
+    }
+    .main{
+        padding: 20px;
+        grid-column:2;    
+    }
+    #overlay img{
+        position: absolute;
+        transition: transform .7s ease-in-out;
+    
+    }
+    #overlay img:hover{
+        position: absolute;
+        transform: rotate(5deg);
+    }
+    #one{
+        top: 10vh;
+        left:-5vw;
+        width:200px;
+    }
+    #two{
+        left: 25vw;
+        top: -5vh;
+        width: 180px;
+    
+    }
+    #three{
+        top:60vh;
+        left: -10vw;
+        width: 400px;
+    }
+    #four{
+        top: 42vh;
+        left: 51vw;
+        width: 150px;
+    }
+    #five{
+        top: 38vh;
+        left: -25vw;
+        width:180px;
+    }
+    .column{
+        display:flex;
+        
+        width: 75vw;
+        gap: 25px;
+    
+    }
+    .right{
+        width: 25vw;
+        
+    
+    }
+    .img-me{
+        width: 25vw;
+        height: 25vw;
+    
+    }
+    
+    .left{
+        width: 50vw;
+       
+    }
+    img{
+        width: 90vw;
+    }
 }
-.img-me{
-    width: 25vw;
-    height: 25vw;
 
-}
 
-.left{
-    padding: 50px;
-    width: 50vw;
-   
-}
 
 #overlay img{
     position: absolute;
@@ -169,29 +278,71 @@ a:active -a link the moment it is clicked */
 #overlay img:hover{
     position: absolute;
     transform: rotate(5deg);
+}
+@media screen and (min-width: 600px){
+    header #myLinks{
+        display: none;
+        font-size: 20px;
+        padding: 5px;
+        background-color: #f3fff293;
+        width: 30vw;
+        float: right;
+        text-align: right;
+    }
+    header .menuicon{
+        display: none;
+    }
+    #one{
+        top: 10vh;
+        left:-5vw;
+        width:400px;
+    }
+    #two{
+        left: 25vw;
+        top: -5vh;
+        width: 360px;
 
+    }
+    #three{
+        top:60vh;
+        left: 10vw;
+        width: 600px;
+    }
+    #four{
+        top: 49vh;
+        left: 56vw;
+        width: 300px;
+    }
+    #five{
+        top: 10vh;
+        left: 48vw;
+        width:400px;
+    }
+    .column{
+        display:flex;
+        padding: 10px;
+        width: 75vw;
+        gap: 25px;
+    
+    }
+    .right{
+        width: 25vw;
+        
+    
+    }
+    .img-me{
+        width: 25vw;
+        height: 25vw;
+    
+    }
+    
+    .left{
+        padding: 50px;
+        width: 50vw;
+       
+    }
 }
-#one{
-    top: 10vh;
-    left:-5vw;
-}
-#two{
-    left: 25vw;
-    top: -5vh
 
-}
-#three{
-    top:60vh;
-    left: 10vw;
-}
-#four{
-    top: 49vh;
-    left: 56vw;
-}
-#five{
-    top: 10vh;
-    left: 48vw;
-}
 
 
 /* rgb(131, 10,71); */

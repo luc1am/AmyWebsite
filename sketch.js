@@ -27,7 +27,6 @@ let text_y;
 function setup() {
     let canvas = createCanvas((0.75*windowWidth), 0.75*windowHeight);
   canvas.parent('sketch-container');
-
   
   
 
@@ -36,23 +35,33 @@ function setup() {
 
 function draw() {
   background(255);
+  if (windowWidth < 600){
+    rad = 150;
+    textSize(20);
+    text_y = (height/2)-20;
+  }
+  else{
+    rad = 300;
+    textSize(50);
+    text_y = (height/2)-50;
+  }
   fill(22, 222, 16);
-    push()
-    translate(width/2,height/2);
-    // oP
-    if (filled) {
+  push()
+  translate(width/2,height/2);
+  // oP
+  if (filled) {
         noStroke();
         fill(0);
-    } 
-    else {
+  } 
+  else {
         noFill();
         stroke(22, 222, 16);
         strokeWeight(1);
-    }
-    nInt = map(mouseX, 0, width, 0.1, 0.1); // map mouseX to noise intensity
-    nAmp = map(mouseY, 0, height, 0.0, .1); // map mouseY to noise amplitude
+  }
+  nInt = map(mouseX, 0, width, 0.1, 0.1); // map mouseX to noise intensity
+  nAmp = map(mouseY, 0, height, 0.0, .1); // map mouseY to noise amplitude
 
-    beginShape();
+  beginShape();
     for (let a=0; a<=TWO_PI; a+=TWO_PI/resolution) {
         //nVal = map(noise(cos(a)*nInt+1, sin(a)*nInt+1, t ), 0.0, 1.0, nAmp, 1.0); // map noise value to match the amplitude
         nVal = map(noise(cos(a)*nInt+1, sin(a)*nInt+1, t ), 0.0, 1.0, nAmp, 1.0); // map noise value to match the amplitude
@@ -60,24 +69,33 @@ function draw() {
         ycir = sin(a)*rad *nVal;
         vertex(xcir, ycir);
         }
-    endShape(CLOSE);
-    t += tChange;
-    pop();
-    fill(139, 50, 168);
-    textSize(50);
-    textFont("forma-djr-display");
-    strokeWeight(200)
-    textAlign(CENTER);
-    //rectMode(CENTER);
-    text_x = 50;
-    text_y = (height/2)-50;
+  endShape(CLOSE);
+  t += tChange;
+  pop();
+  fill(139, 50, 168);
+  
+  textFont("forma-djr-display");
+  strokeWeight(200)
+  textAlign(CENTER);
+  //rectMode(CENTER);
+  text_x = 50;
     
-    text("Hi, I'm Lucia.",text_x, text_y, width-100, height);
+  text("Hi, I'm Lucia.",text_x, text_y, width-100, height);
 }
 
 function windowResized(){
   resizeCanvas((0.75*windowWidth), 0.75*windowHeight);
   text_x = 50;
   text_y = (height/2)-50;
+}
+
+function myFunction(){
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block"){
+    x.style.display = "none";
+    
+  } else{
+    x.style.display = "block"
+  }
 }
 
