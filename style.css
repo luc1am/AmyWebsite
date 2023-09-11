@@ -37,6 +37,16 @@ h1{
     z-index: 0;
 }
 
+h3{
+    position: relative;
+    font-family: roc-grotesk, sans-serif;
+    font-size: 30px; 
+    padding: 0px;
+    z-index: 2;
+    font-style: italic;
+    font-weight: normal;
+    color: rgb(139, 50, 168);
+}
 h2{
     position: relative;
     font-family: roc-grotesk, sans-serif;
@@ -181,6 +191,16 @@ https://codepen.io/alvarotrigo/pen/oNGzoYd  */
         z-index: 2;
     } 
     h1{
+        position: relative;
+        font-family: roc-grotesk, sans-serif;
+        font-size: 15px;
+        color: rgb(139, 50, 168);
+        
+        padding: 2px;
+        font-weight: normal;
+        z-index: 0;
+    }
+    h3{
         position: relative;
         font-family: roc-grotesk, sans-serif;
         font-size: 15px;
