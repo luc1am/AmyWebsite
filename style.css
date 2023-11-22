@@ -1,3 +1,11 @@
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
 .wrapper{
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -37,6 +45,15 @@ h1{
     z-index: 0;
 }
 
+h4{
+    position: relative;
+    font-family: roc-grotesk, sans-serif;
+    font-size: 20px;
+    color: rgb(184,94,20);
+    padding: 5px;
+    font-weight: normal;
+    z-index: 0;
+}
 h3{
     position: relative;
     font-family: roc-grotesk, sans-serif;
@@ -58,7 +75,7 @@ h2{
 }
 p{
     position: relative;
-    font-family: forma-djr-display, sans-serif;
+    font-family: bilo, sans-serif;
     font-weight: 420;
     letter-spacing: 1px;
     font-size: 20px;
@@ -92,6 +109,10 @@ p{
 /* https://www.w3schools.com/css/css_link.asp */
 h1 a{
     color: rgb(139, 50, 168);
+    text-decoration: none;
+}
+h4 a{
+    color: rgb(184, 94,20);
     text-decoration: none;
 }
 header a{
@@ -149,6 +170,7 @@ a:active -a link the moment it is clicked */
 /* check out this hamburgermenu
 https://codepen.io/alvarotrigo/pen/oNGzoYd  */
 @media screen and (max-width: 600px){
+    
     iframe{
         width: 88vw;
         height: 50vw;
@@ -300,6 +322,9 @@ https://codepen.io/alvarotrigo/pen/oNGzoYd  */
     transform: rotate(5deg);
 }
 @media screen and (min-width: 600px){
+
+   
+
     header #myLinks{
         display: none;
         font-size: 20px;

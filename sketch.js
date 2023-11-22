@@ -43,7 +43,7 @@ function draw() {
   else{
     rad = 300;
     textSize(50);
-    text_y = (height/2)-50;
+    text_y = (height/2)-40;
   }
   fill(22, 222, 16);
   push()
@@ -74,11 +74,11 @@ function draw() {
   pop();
   fill(139, 50, 168);
   
-  textFont("forma-djr-display");
+  textFont("bilo");
   strokeWeight(200)
   textAlign(CENTER);
   //rectMode(CENTER);
-  text_x = 50;
+  text_x = 53;
     
   text("Hi, I'm Lucia.",text_x, text_y, width-100, height);
 }
