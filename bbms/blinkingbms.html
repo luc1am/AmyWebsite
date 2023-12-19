@@ -20,6 +20,13 @@
        <a href="#week4">week 4</a>&emsp;
        <a href="#week5">week 5</a>&emsp;
        <a href="#week6">week 6</a>&emsp;
+       <a href="#sensor">sensor presentation</a>&emsp;
+       <a href="#week7">week 7</a>&emsp;
+       <a href="#week8">week 8</a>&emsp;
+       <a href="#week9">week 9</a>&emsp;
+       <a href="#week10">week 10</a>&emsp;
+       <a href="#final">final</a>&emsp;
+
 
     
     </p>
@@ -107,9 +114,8 @@
         <p>"Friendship Lights Up My Life" uses piezo sensors attached to gloves on opposite wearers.
           When the users high-five, the LED lights up properly. 
         </p>
-        <iframe width = "640" height = "360"
-        src="https://youtu.be/embed/1gc8I9C4ZCA" ></iframe>
-     
+        
+
         
       
 
@@ -147,42 +153,109 @@
     We spent many hours in the IDM design lab taking everything apart and starting from the beginning, but so far it was a dud. 
   </p>
 
-  <iframe width = "640" height = "360"
-  src="https://youtube.com/shorts/KDIkJWIEYBc" ></iframe>
+  <iframe width="439" height="781" src="https://www.youtube.com/embed/KDIkJWIEYBc" title="IMG 8116" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
      
  
   
  
-  <iframe width = "640" height = "360"
-        src="https://youtube.com/shorts/jJQbuHFdDqA?feature=share" ></iframe>
- 
-
+  <iframe width="439" height="781" src="https://www.youtube.com/embed/jJQbuHFdDqA" title="IMG 8101" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   <p>Will try again in the next day.</p>
     </div>
+  </div>
+  <div id = "sensor">
+    <h2>Lucia and Marshall Sensor Presentation CCS811 Air Quality Sensor</h2>
+    <h3>History of Our Sensor</h3>
+    <p>This sensor was first used to detect carbon monoxide in mines 
+      It was created in 1937, and has since evolved for many more uses.
+      </p>
+      <img src="ccs.jpg" alt="">
+      <h3>uses of this sensor:</h3>
+
+      <p>Warning of hazardous air<br>
+        Automated Air Filtering<br>
+        Detecting Gas Leaks<br>
+        Identifying pollution sources<br>
+        Weather Forecasting<br>
+
+        <br>
+        Our main issue with this sensor happened to be that it uses a specific I2C protocal and address that we were misusing in the code.
+
+        Our Inland manufactured version of the sensor used address: #define CCS811_ADDR 0x5A
+<br> instead of address: #define CCS811_ADDR 0x5B
+        <br><br>
+        This is what saved our code, as noted below.
+        </p>
+        <img src="IMG_9006.jpg" alt="">
+
+
+  </div>
     <div id = "week6">
       <h2>WEEK 6</h2>
-
+      <h3>midterm progress</h3>
+      <p>Right now, we're trying to make sure that all of our little parts work together as one piece, before we begin to put a cover on top.
+        <br>
+        We are using a PIR motion sensor from Inland, and the two provided servo motors in our IDM Nano kits. 
+        Below is the video where we got it to move when a person steps in front of the motion sensor. 
+      </p>
+      <iframe width="439" height="781" src="https://www.youtube.com/embed/7l4LD9Ma_2E" title="December 18, 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     </div>
     <div id = "week7">
       <h2>WEEK 7</h2>
+      <h3>midterm presentations!</h3>
+      <iframe width="439" height="781" src="https://www.youtube.com/embed/pBQgFAO7LTc" title="December 18, 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-
+      <p> this is our ghost! he is very sweet, not very scary and kind of purrs electronically instead of scares you.</p>
+      <img src="IMG_8236.JPG" alt="">
     </div>
     <div id = "week8">
       <h2>WEEK 8</h2>
-
+     <h3> serial communication is hard</h3>
+     <p> I struggled so much with this communication between p5 and the microcontroller. 
+      It seems like pure magic to be able to speak across a page with a potentiometer. 
+      Here, we created a little visual that shifts the size and the colors of two rectangles with subtract as a blend mode.
+      <a href="https://github.com/luc1am/serial-comm"> my code is here</a>
+     </p>
+    
+     <br>
+     <iframe width="439" height="781" src="https://www.youtube.com/embed/jmeXNDAJdOk" title="serial communication!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     </div>
     <div id = "week9">
       <h2>WEEK 9</h2>
+      <h3>LEDs, Addressable</h3>
+      <p>it speaks for itself.</p>
+      <iframe width="439" height="781" src="https://www.youtube.com/embed/MSdq2L2dqHY" title="we demand jobs!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
     </div>
     <div id = "week10">
       <h2>WEEK 10</h2>
+      <h3>moving the things</h3>
+      <p>treating it as "what if this were in a gallery"</p>
+      <iframe width="439" height="781" src="https://www.youtube.com/embed/C0kPMbA7eng" title="servos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+    </div>
+    <div id = "final">
+      <h2>all progross on my final</h2>
+      <h3>many frustrations and a different direction</h3>
+      <p>The idea for this was to create a structure that appropriately displays my knit and coded pieces in a moving display. I bought stepper motors to specifically map it to a 3d graph that I love, moving the (x,y) points based on my favorite motion of the chart. However, 
+        I ran into many issues with the stepper motors, mostly my unfamilarity with it put setbacks in my outcome. I didn't know that in Arduino's stepper motor assignment, it goes: stepper(number of steps, int1, int3, int2, int4);
+This just set me in a place of confusion where I also had to be worrying about the physical build of the object. 
 
+I wanted it to <i>have scale</i> to it. I want me things to mean something when you see it. 
+However, I ran into trouble with timing. 
+Despite this, I am happy with a slow, slow, moving art piece. As long as if it moves at all, and not with the wind. 
+<br>
+<br>
+I know that by our definition of interactivity, it doesn't "hear", "think", and "respond" to anything. I intended to have a motion sensor for on/off movement and I turned it off for demonstration purposes and couldn't get it to work. 
+I'll cut my losses and say I've accomplished enough this semester to be happy with what I have learned from this class. 
+
+      </p>
+      <iframe width="439" height="781" src="https://www.youtube.com/embed/-8O7AyxC8xg" title="issues with stepper" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="439" height="781" src="https://www.youtube.com/embed/lyxRRwNsmMI" title="movement is too slow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+      <img src="IMG_8833.JPG" alt="">
     </div>
   </body>
   <footer>
@@ -192,6 +265,6 @@
         <br>
         <br>
         <br>
-        <div><h3>designed by lucia mumma</h3></div>
+        <div><h3>lucia mumma</h3></div>
     </footer>
 </html>
