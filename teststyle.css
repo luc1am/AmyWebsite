@@ -1,0 +1,231 @@
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+h1{
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: 100px;
+    font-weight: 300;
+    padding:0px;
+    padding-left: 20px;
+    position: relative;
+    top: 100px;
+    color:#191d1a;
+
+}
+th,td{
+    font-family: "minion-pro", serif;
+    font-weight:400;
+    font-size: 24px;
+    position: relative;
+    padding: 10px;
+    
+    width: 80vw;
+    border:2px solid rgba(128, 155, 145, 0.396);
+}
+h2{
+    font-family: 'Cascadia Code', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    padding:0px;
+    padding-left: 20px;
+    position: relative;
+    color:#191d1a;
+    
+}
+h3{
+    font-family: "minion-pro", serif;
+    font-weight: 400;
+    font-style: italic;
+    position:inherit;
+    color:#191d1a;
+}
+
+p{
+    font-family: "minion-pro", serif;
+    font-weight:400;
+    font-size: 24px;
+    position: relative;
+    top: 20px;
+    padding: 10px;
+    left:50px;
+    width: 80vw;
+    
+    
+}
+
+.class {
+    
+    font-family: "minion-pro", serif;
+    font-weight: 400;
+    font-style: italic;
+    padding:0px;
+    padding-left: 30px;
+    position: relative;
+    top:80px;
+    color:#191d1a;
+}
+.butt{
+    position: sticky;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #000000;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: "minion-pro", serif;
+    font-style: italic;
+    font-size: 32px;
+    border-radius: 50px;
+    color:#191d1a;
+}
+.butt:hover{
+    background-color: rgb(255, 189, 36);
+    
+}
+.box{
+    margin: auto;
+    position: relative;
+    
+    
+    display:grid;
+    
+    grid-gap: 10px;
+    padding:4px;
+}
+
+a img:hover{
+    opacity:75%;
+    transition: opacity 1s;
+}
+
+img{
+    width: 50vw;
+
+}
+
+
+/* mobile */
+@media screen and (max-width: 600px){
+    body{
+        padding: 10px;
+        
+
+    }   
+    h1{
+        font-family: 'Cascadia Code', sans-serif;
+        font-size: 48px;
+        padding:0px;
+        padding-left: 20px;
+        position: relative;
+        top: 100px;
+        
+    
+    
+    }
+    .space{
+        font-family: "minion-pro", serif;
+        font-weight: 400;
+        font-size: 24px;
+        font-style: italic;
+        padding:0px;
+        padding-left: 30px;
+        position: relative;
+        top:80px;
+    
+    }
+    .box{
+        width: 90vw;
+        grid-template-columns: 44vw 44vw;
+    }
+    .box img{
+        width: 44vw;
+
+    }
+}
+/* midsize (half, ipad) */
+@media screen and (min-width: 600px) and (max-width: 1200px){
+    body{
+       padding: 20px;
+       
+       
+    }   
+    h1{
+        font-family: 'Cascadia Code', sans-serif;
+        font-size: 80px;
+        padding:0px;
+        padding-left: 20px;
+        position: relative;
+        top: 100px;
+    
+    
+    }
+    .space{
+        font-family: "minion-pro", serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size:40px;
+        padding:0px;
+        padding-left: 40px;
+        position: relative;
+        top:80px;
+    
+    }
+    .box{
+        width: 90vw;
+        grid-template-columns: 29vw 29vw 29vw;
+    }
+    .box img{
+        width: 29vw;
+        
+    }
+}
+/* largest screensize */
+@media screen and (min-width: 1200px){
+    
+    body{
+       padding: 20px;
+
+    }   
+    h1{
+        font-family: 'Cascadia Code', sans-serif;
+        font-size: 100px;
+        padding:0px;
+        padding-left: 20px;
+        position: relative;
+        top: 100px;
+    
+    
+    }
+    .space{
+        font-family: "minion-pro", serif;
+        font-weight: 400;
+        font-size: 68px;
+        font-style: italic;
+        padding:0px;
+        padding-left: 50px;
+        position: relative;
+        top:80px;
+    
+    }
+    .box{
+        width: 90vw;
+        grid-template-columns: 29vw 29vw 29vw;
+    }
+    .box img{
+        width: 29vw;
+        
+    }
+}
